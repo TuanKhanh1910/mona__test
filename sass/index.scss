@@ -1,0 +1,21 @@
+// Helpers
+@import "./Helpers/variable";
+
+// pages
+@import "./pages/global";
+@import "./pages/header";
+@import "./pages/banner";
+@import "./pages/course";
+@import "./pages/document";
+@import "./pages/exam";
+@import "./pages/infor";
+@import "./pages/footer";
+@import "./pages/backtotop";
+@import "./pages/tooltips";
+// carousel
+@import "./Libary/owl.carousel.scss";
+@import "Libary/owl.theme.default.scss";
+@import "Libary/owl.theme.green.scss";
+
+// reponsive
+@import "./reponsive/xlScreen";

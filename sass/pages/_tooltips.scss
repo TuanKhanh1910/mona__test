@@ -1,0 +1,27 @@
+.tooltip {
+  width: 180px;
+  height: 32px;
+  //   position: absolute;
+
+  //   top: 0;
+  //   right: 0;
+  border-radius: 1rem;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+
+  transition: all 0.2s 0.1s ease-out;
+  transform-origin: 6rem center;
+  //   transform: translateX(-50px) ;
+  transform: translateX(-180px) translateY(-72px) rotate(30deg);
+  //   opacity: 2;
+  //   opacity: 0;
+  //   visibility: hidden;
+  text-align: center;
+
+  span {
+    // font-size: $fs-1 - 4;
+    font-weight: $fw-500;
+    color: $color-white;
+  }
+}

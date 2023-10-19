@@ -1,0 +1,36 @@
+.backToTop {
+  z-index: 9999;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+
+  //   border-style: solid;
+  //   border-image: linear-gradient(
+  //       to top,
+  //       rgba(249, 91, 52, 1),
+  //       rgba(249, 184, 64, 1)
+  //     )
+  //     1;
+
+  /* cách để ẩn nút back to top */
+  visibility: hidden;
+  opacity: 0;
+  i {
+    border-radius: 50%;
+    border: 1px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+      linear-gradient(to bottom, rgba(249, 91, 52, 1), rgba(249, 184, 64, 1))
+        border-box;
+    color: rgba(249, 132, 26, 1);
+    font-size: 1.5rem;
+
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 36px;
+  }
+}
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
