@@ -1,0 +1,26 @@
+.header {
+  @media screen and (min-width: 992px) and (max-width: 1174px) {
+    #navbarSupportedContent {
+      .menu-main-menu {
+        .menu-item {
+          .nav-link {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 991.98px) {
+    #navbarSupportedContent {
+      .navbar-nav {
+        text-align: center;
+        padding: 20px 0;
+        // transform: translateX(150px);
+        background-color: $color-orange;
+      }
+    }
+    .login_signUp {
+      display: none !important;
+    }
+  }
+}

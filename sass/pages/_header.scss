@@ -1,20 +1,28 @@
-header {
-  position: absolute;
+.header {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 2.4rem;
   z-index: 999;
   font-family: $ff-inter;
+  background: #f9b840;
+  background: -webkit-linear-gradient(to left, #f9b840, #f95b34);
+  background: linear-gradient(to left, #f9b840, #f95b34);
+  .header__logo {
+    display: inline-block;
+    margin-right: 7rem;
+  }
   #navbarSupportedContent {
-    margin-left: 59.5px;
+    margin-left: 5, 95rem;
     .menu-main-menu {
       .menu-item {
+        margin-right: 3rem;
         .nav-link {
-          font-size: $fs-6;
-          line-height: 24px;
+          font-size: 1.6rem;
+          line-height: 2.4rem;
           font-weight: $fw-400;
           color: $color-black;
         }
@@ -24,7 +32,7 @@ header {
         &::after {
           content: "";
           width: 0;
-          height: 2px;
+          height: 0.2rem;
           background-color: #f9b840;
           display: block;
           transition: all 0.5s;
@@ -41,16 +49,19 @@ header {
     }
   }
   .login_signUp {
+    font-size: 1.6rem;
+    margin-left: 7rem;
     .login {
       button {
-        padding: 10px 28px;
+        padding: 1rem 2.8rem;
         background: #f9b840;
         background: -webkit-linear-gradient(to left, #f9b840, #f95b34);
         background: linear-gradient(to left, #f9b840, #f95b34);
         color: $color-white;
         border: transparent;
-        border-radius: 0 0 0 16px;
+        border-radius: 0 0 0 1.6rem;
         transition: all 0.5s;
+
         &:hover {
           color: $color-black;
         }
@@ -58,11 +69,11 @@ header {
     }
     .signUp {
       button {
-        padding: 10px 33.5px;
+        padding: 1rem 3.35rem;
         background-color: $color-primary;
         color: white;
         border: transparent;
-        border-radius: 0 0 16px 0;
+        border-radius: 0 0 1.6rem 0;
         transition: all 0.5s;
         &:hover {
           color: $color-black;

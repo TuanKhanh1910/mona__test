@@ -1,6 +1,6 @@
 .tooltip {
-  width: 180px;
-  height: 32px;
+  width: 18rem;
+  height: 3.2rem;
   //   position: absolute;
 
   //   top: 0;
@@ -13,15 +13,15 @@
   transition: all 0.2s 0.1s ease-out;
   transform-origin: 6rem center;
   //   transform: translateX(-50px) ;
-  transform: translateX(-180px) translateY(-72px) rotate(30deg);
+  transform: translateX(-18rem) translateY(-7.2rem) rotate(30deg);
   //   opacity: 2;
   //   opacity: 0;
   //   visibility: hidden;
   text-align: center;
 
   span {
-    // font-size: $fs-1 - 4;
-    font-weight: $fw-500;
+    font-size: 1.4rem;
+    font-weight: 500;
     color: $color-white;
   }
 }

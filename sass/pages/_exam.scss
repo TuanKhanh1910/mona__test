@@ -3,50 +3,46 @@
   color: rgba(49, 49, 49, 1);
   text-align: center;
   margin-top: 0;
-  transform: translateY(-260px);
-  position: relative;
-  z-index: 999;
+  // transform: translateY(-115rem);
   background-image: url("../img/white.png");
   height: 754px;
   width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   .exam__content {
     .exam__header {
       text-transform: uppercase;
       position: relative;
-      margin-bottom: 35px;
-      h2 {
-        font-weight: 800;
-        font-size: 32px;
-        line-height: 38.4px;
-        transform: translateX(85px);
-      }
-      button {
-        transform: translateX(360px);
-        border: 1px solid rgba(135, 1, 202, 1);
+      margin-bottom: 3.5rem;
+      position: relative;
 
-        border-radius: 100px;
-        width: 157px;
-        height: 44px;
-        font-size: 16px;
-        line-height: 22.4px;
+      .exam__header__title {
+        font-weight: 800;
+        font-size: 3.2rem;
+        text-align: center;
+      }
+      .btn_exam__header__title {
+        border: 0.1rem solid rgba(135, 1, 202, 1);
+        border-radius: 10rem;
+        padding: 1.1rem 2.2rem;
+        font-size: 1.6rem;
         font-weight: 600;
         color: $color-primary;
         text-align: center;
         transition: all 0.5s;
-        i {
-          margin-left: 10px;
-          width: 24px;
-          height: 24px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        .fa-chevron-right {
+          margin-left: 1rem;
           color: white;
           background-color: $color-orange;
-          padding: 9px;
-          border-radius: 24px;
-          line-height: 5px;
+          // border-radius: 24px;
           transition: all 0.5s;
+          padding: 0.4rem 0.8rem;
+          border-radius: 50%;
         }
         &:hover {
           background-color: $color-orange;
@@ -59,211 +55,209 @@
       }
     }
     .exam__topic {
-      transform: translateX(-20px);
+      transform: translateX(-2rem);
       text-align: center;
-      margin-bottom: 23px;
-      gap: 54.2px;
-
-      p {
-        text-transform: uppercase;
-        line-height: 22.4px;
-        font-size: 16px;
-        font-weight: $fw-500;
-        cursor: pointer;
-        transition: all 0.5s;
-        &:hover {
-          color: $color-primary;
-          &:first-of-type {
-            color: $color-orange;
-            background-color: $color-primary;
+      margin-bottom: 2.3rem;
+      gap: 5.42rem;
+      .exam__topic__navbar {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .exam__topic__item {
+          &:hover {
+            .exam__topic__link {
+              background-color: rgba(249, 132, 26, 1);
+              color: $color-white;
+              border-radius: 3.2rem;
+            }
           }
         }
-        &:first-of-type {
-          background-color: rgba(249, 132, 26, 1);
-          color: $color-white;
-          padding: 10px 20px;
-          border-radius: 32px;
-          transform: translateY(-10px);
+        .exam__topic__link {
+          font-size: 1.6rem;
+          color: rgba(49, 49, 49, 1);
+          padding: 1rem 2rem;
+          transition: all 0.5s;
+          font-weight: 600;
         }
       }
     }
     .exam__form {
-      transform: translateX(202px);
-      margin-bottom: 25px;
+      transform: translateX(20.2rem);
+      margin-bottom: 2.5rem;
       form {
-        border: 1px solid rgba(206, 206, 206, 1);
-        width: 790px;
-        height: 44px;
-        padding: 10px 6px 10px 10px;
-        border-radius: 44px;
+        border: 0.1rem solid #e5e7eb;
+        width: 79rem;
+        height: 4.4rem;
+        padding: 1rem 0.6rem 1rem 1rem;
+        border-radius: 4.4rem;
         color: rgba(136, 136, 136, 1);
-        p {
+        .exam__form__left {
           font-weight: 400;
-          font-size: 16px;
-          line-height: 22.4px;
+          font-size: 1.6rem;
           position: relative;
-          &:first-of-type {
-            margin-left: 30px;
-            cursor: pointer;
-            i {
-              margin-left: 53.3px;
-            }
-            &::after {
-              content: "";
-              width: 1px;
-              height: 22px;
-              background-color: rgba(206, 206, 206, 1);
-              position: absolute;
-              top: 0;
-              right: -20px;
-            }
+          margin-left: 3rem;
+          cursor: pointer;
+          .fa-chevron-down {
+            margin-left: 5.33rem;
           }
-          &:nth-child(2) {
-            transform: translateX(-60px);
+          &::after {
+            content: "";
+            width: 0.1rem;
+            height: 2.2rem;
+            background-color: rgba(206, 206, 206, 1);
+            position: absolute;
+            top: 0;
+            right: -2rem;
           }
         }
+        .exam__form__center {
+          font-size: 1.6rem;
+          font-weight: 400;
+          color: rgba(136, 136, 136, 1);
+          transform: translateX(-7rem);
+        }
         .form__icon {
-          width: 32px;
-          height: 32px;
-          padding: 6px;
+          width: 3.2rem;
+          height: 3.2rem;
           background-color: $color-primary;
           color: $color-white;
-          border-radius: 32px;
-          transform: translate(-3px, -5px);
+          border-radius: 3.2rem;
+          transform: translate(-0.3rem, -0.5rem);
           cursor: pointer;
+          .fa-magnifying-glass {
+            margin: 0 auto;
+            padding: 0.6rem;
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+          }
         }
       }
     }
     .exam__detail {
-      width: 1490px;
-      transform: translateX(-75px);
-      .exam__items {
+      .exam__detail__1,
+      .exam__detail__2 {
         display: flex;
-        gap: 20px;
-        padding: 16px 25px 16px 24px;
-        transition: all 0.5s;
-        cursor: pointer;
-        &:hover {
-          color: white;
-          background-color: $color-primary;
-          border-radius: 8px;
-          .item__right {
-            .header__right {
-              color: $color-white;
-              span {
-                color: $color-white;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3rem;
+
+        .exam__items {
+          padding: 1rem 2rem;
+          display: flex;
+          gap: 1rem;
+          justify-content: space-between;
+          transition: all 0.5s;
+          cursor: pointer;
+          border-radius: 1.6rem;
+          .item__left {
+            .left_img {
+              margin-bottom: 1rem;
+              img {
+                border-radius: 1rem;
               }
             }
-            p {
-              color: $color-white;
+            .sub__img {
+              font-size: 1.4rem;
+              font-weight: 600;
+              transition: all 0.5s;
+            }
+          }
+          .item__right {
+            transition: all 0.5s;
+            .header__right {
+              width: 212px;
+              font-size: 1.4rem;
+              text-align: left;
+              margin-bottom: 0;
+              span {
+                font-weight: 600;
+              }
+            }
+            .info__right {
+              text-align: left;
+              font-size: 1.4rem;
+              font-weight: 600;
             }
             .infomation {
-              .row {
-                .col-6 {
-                  i {
-                    color: $color-white;
-                  }
+              text-align: left;
+              .infomation__item {
+                margin-bottom: 1rem;
+                font-size: 1.4rem;
+                .fa-solid {
+                  color: $color-primary;
+                  transition: all 0.5s;
                 }
               }
             }
             .exam__hastag {
-              p {
-                background-color: rgba(252, 163, 69, 1);
-                color: $color-white;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              .exam__hastag__title {
+                font-size: 1.2rem;
+                font-weight: 400;
+                color: rgba(136, 136, 136, 1);
+                padding: 0.6rem 1rem;
+                background-color: rgba(236, 236, 236, 1);
+                border-radius: 2.6rem;
               }
             }
           }
-        }
-
-        .item__left {
-          .left_img {
-            margin-bottom: 8px;
-            img {
-              width: 100px;
-              height: 100px;
+          &:hover {
+            background-color: $color-primary;
+            .item__left {
+              .sub__img {
+                color: $color-white;
+              }
             }
-          }
-          .sub__img {
-            font-size: 14px;
-            font-weight: 600;
-            line-height: 19.6px;
-            text-align: center;
-          }
-        }
-        .item__right {
-          .header__right {
-            font-weight: 400;
-            line-height: 21px;
-            font-size: 14px;
-            text-align: left;
-            margin-bottom: 5px;
-            span {
-              font-size: 14px;
-              font-weight: 600;
-              line-height: 16.8px;
-              color: rgba(49, 49, 49, 1);
-            }
-          }
-          p {
-            text-align: left;
-            font-size: 14px;
-            font-weight: 600;
-            line-height: 16.8px;
-            color: rgba(49, 49, 49, 1);
-            margin-bottom: 0;
-          }
-          .infomation {
-            width: 215px;
-            height: 48px;
-            text-align: left;
-            margin-top: 8px;
-            .row {
-              .col-6 {
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 21px;
-                margin-bottom: 8px;
-                i {
-                  color: $color-primary;
-                  margin-right: 5px;
+            .item__right {
+              color: $color-white;
+              .infomation {
+                .infomation__item {
+                  .fa-solid {
+                    color: white;
+                  }
+                }
+              }
+              .exam__hastag {
+                .exam__hastag__title {
+                  background-color: $color-orange;
+                  color: white;
+                  font-weight: 700;
                 }
               }
             }
           }
-          .exam__hastag {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 19px;
-            align-items: center;
-            p {
-              background-color: rgba(236, 236, 236, 1);
-              border-radius: 26px;
-              padding: 6px 10px;
-              color: rgba(136, 136, 136, 1);
-              font-size: 12px;
-              transition: all 0.5s;
-            }
-          }
         }
+      }
+      .exam__detail__1 {
+        margin-bottom: 4rem;
       }
     }
     .btn_exam {
-      margin-top: 24px;
-      padding: 16px;
+      margin-top: 2.4rem;
+      padding: 1.6rem;
       background-color: rgba(249, 132, 26, 1);
       color: $color-white;
-      border-radius: 8px;
+      border-radius: 0.8rem;
       border: transparent;
-      font-size: 16px;
-      line-height: 22.4px;
+      font-size: 1.6rem;
       font-weight: 600;
       transition: all 0.5s;
-      i {
-        margin-left: 19.11px;
+      .fa-chevron-right {
+        margin-left: 1.911rem;
       }
       &:hover {
         background-color: $color-primary;
       }
     }
   }
+  // .exam__bg {
+  //   background-image: url("../img/radius.png");
+  //   width: calc(100%);
+  //   height: 40rem;
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  // }
 }
